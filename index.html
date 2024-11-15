@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dheemanth P J | Portfolio</title>
+    <!-- Removed Google Fonts Link as we're using Times New Roman -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar Html Code  -->
+    <header>
+        <nav id="navBar" class="navBar">
+            <div class="name">
+                <h1>Dheemanth</h1>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="menu" id="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Navbar Html Code  -->
+
+    <!-- Hero Section Html Code  -->
+    <section class="hero" id="home">
+        <div class="over"></div>
+        <div class="hero-container">
+            <h1>
+                <p class="up">HI!</p><br>
+                <p class="down">I am Dheemanth</p>
+            </h1>
+            <h1>I'm a CSE student at VCET <span class="auto-type"></span></h1>
+            <div class="botton">
+                <a href="https://www.linkedin.com/in/dheemanth-p-j-554985283/" target="_blank"><img src="linkedin.svg" alt=""></a>
+                <a href="https://github.com/ArchitAgrawal25" target="_blank"><img src="github.svg" alt=""></a>
+                <a href="https://www.instagram.com/archit_agrawal_25/" target="_blank"><img src="instagram.svg" alt=""></a>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section Html Code  -->
+
+    <!-- About Section Html Code -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="imgeffect">
+                <img src="dheem5.jpg" alt="">
+            </div>
+            <div class="text">
+                <p class="p1">Who Am I?</p>
+                <h2>About Me</h2>
+                <p class="p2">I am a third-year Computer Science student at Vivekananda College Of Engineering And Technology. Born and raised in Coorg, I’m passionate about creating solutions for real-world challenges..</p>
+                <a href="images/My_Resume.pdf" target="_blank"><button>Download CV</button></a>
+            </div>
+        </div>
+    </section>
+    <!-- About Section Html Code -->
+
+    <!-- Skills Section Html Code -->
+    <section class="Skills" id="skills">
+        <div class="container">
+            <div class="heading">
+                <h1 class="skillh1">My Skills</h1>
+            </div>
+            <div class="mainSkill">
+                <div class="front">
+                    <h2>Programming Languages</h2>
+                    <div class="box">
+                        <div class="frontSkill">
+                            <img src="c.png" alt="C programming logo">
+                            C
+                        </div>
+                        <div class="frontSkill">
+                            <img src="c++.png" alt="C++ programming logo">
+                            C++
+                        </div>
+                    </div>
+                </div>
+                <div class="back">
+                    <h2>Backend</h2>
+                    <div class="box">
+                        <div class="backSkill">
+                            <img src="mysql.png" alt="MySQL logo">
+                            SQL
+                        </div>
+                        <div class="backSkill">
+                            <img src="python.png" alt="Python logo">
+                            Python
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section Html Code -->
+
+    <!-- Contact Section Html Code  -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h1>Contact Me</h1>
+                <p>Phone No.:<br> +91 7349652617</p>
+                <p>Email:<br> dheemanthpj5@gmail.com</p>
+                <p>Social Links:</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/dheemanth-p-j-554985283/" target="_blank"><img src="linkedin.svg" alt="LinkedIn"></a>
+                    <a href="https://github.com/dheemanthpj" target="_blank"><img src="github.svg" alt="GitHub"></a>
+                    <a href="https://www.instagram.com/dheemanth5/" target="_blank"><img src="instagram.svg" alt="Instagram"></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="#">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section Html Code  -->
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menuToggle');
+            const menu = document.getElementById('menu');
+            const header = document.querySelector('header');
+            const navBar = document.querySelector('.navBar');
+
+            menuToggle.addEventListener('click', function() {
+                menu.classList.toggle('active');
+            });
+
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    header.classList.add('header-scrolled');
+                } else {
+                    header.classList.remove('header-scrolled');
+                }
+            });
+
+            document.addEventListener('click', function(event) {
+                const target = event.target;
+                const isMenuToggle = target.closest('#menuToggle');
+                const isMenu = target.closest('#menu');
+                const isNavBar = target.closest('.navBar');
+
+                if (!isMenuToggle && !isMenu && !isNavBar) {
+                    menu.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
